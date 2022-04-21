@@ -15,11 +15,12 @@ export default function Search() {
 
   useEffect(() => {
     searchData();
-  }, [value]);
+  });
 
   return (
     <div className="search">
       <h1 className="title">Find in records</h1>
+
       <div className="search-bar">
         <div className="search-container">
           <input

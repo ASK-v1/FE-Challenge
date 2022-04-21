@@ -1,17 +1,14 @@
 import '../styles/home.css';
 import Search from '../components/Search';
+import News from '../components/News';
 
 export default function Home() {
   return (
     <div className="home">
-      <div className="new-record">
-        <h1>Add new record</h1>
-      </div>
+      <button className="new-record">Add new record</button>
       <div className="logo" />
-
-      <div className="search">
-        <Search />
-      </div>
+      <Search />
+      <News />
     </div>
   );
 }

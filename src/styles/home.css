@@ -20,20 +20,18 @@
   margin-left: 55rem;
   width: 197.16px;
   height: 46px;
-  text-align: center;
   background: #204080;
   border-radius: 12px;
-}
-.home .new-record:hover {
-  background: #4f75c2;
-  cursor: pointer;
-}
-
-.home .new-record h1 {
+  color: white;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.home .new-record:hover {
+  background: #4f75c2;
 }
