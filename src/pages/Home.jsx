@@ -1,6 +1,7 @@
 import '../styles/home.css';
 import Search from '../components/Search';
 import News from '../components/News';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="logo" />
       <Search />
       <News />
+      <Footer />
     </div>
   );
 }
