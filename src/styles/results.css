@@ -1,0 +1,292 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+}
+
+.results .results-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.results .results-nav .results-logo {
+  width: 149px;
+  height: 63px;
+  margin-right: 33px;
+  background: url('../../public/logo.jpeg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.results .results-nav .results-input {
+  width: 509px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-left: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #484848;
+}
+
+.results .results-nav .results-search {
+  width: 138px;
+  height: 46px;
+  background: #204080;
+  border-radius: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 23px;
+}
+.results .results-nav .results-search:hover {
+  background: #4f75c2;
+}
+
+.results .results-nav .results-add {
+  width: 216px;
+  height: 46px;
+  background: #204080;
+  border-radius: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 93px;
+}
+.results .results-nav .results-add:hover {
+  background: #4f75c2;
+}
+
+.results .results-nav .results-order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #484848;
+  position: absolute;
+  width: 126.28px;
+  height: 29.5px;
+  margin-top: 11rem;
+  margin-left: 44rem;
+  background: #f3f2f2;
+  border: 1px solid #414141;
+  box-sizing: border-box;
+  border-radius: 8px;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.results .results-nav .results-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  width: 155.78px;
+  height: 135.11px;
+  position: absolute;
+  margin-top: 23rem;
+  margin-left: 46rem;
+  background: #ffffff;
+  border: 1px solid #8f8f8f;
+  box-sizing: border-box;
+  box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  gap: -1rem;
+}
+
+.results .results-nav .results-open .results-open-items {
+  width: 120px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  padding: 6px;
+  margin-top: -6px;
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+}
+
+.results .results-nav .results-open .results-open-items:hover {
+  width: 120px;
+  background: #b3b3b3;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 6px;
+  margin-top: -6px;
+  top: 6px;
+  position: relative;
+}
+
+.results .results-nav .results-open .results-open-items-active {
+  width: 120px;
+  background: #b3b3b3;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 6px;
+  margin-top: -6px;
+  top: 6px;
+  position: relative;
+}
+
+.results .results-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12rem;
+}
+
+.results .results-body .results-body-items {
+  display: flex;
+  flex-direction: row;
+  width: 44rem;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.results .results-body .results-body-items:hover {
+  background: rgba(79, 117, 194, 0.21);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.results .results-body .results-body-items .results-body-items-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.results .results-body .results-body-items .results-body-items-left .results-body-items-left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.results
+  .results-body
+  .results-body-items
+  .results-body-items-left
+  .results-body-items-left-text
+  .results-body-items-left-text-upper {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #090a0a;
+}
+
+.results
+  .results-body
+  .results-body-items
+  .results-body-items-left
+  .results-body-items-left-text
+  .results-body-items-left-text-lower {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #72777a;
+  margin-top: -5px;
+}
+
+.results .results-body .results-body-items .results-body-items-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.results
+  .results-body
+  .results-body-items
+  .results-body-items-right
+  .results-body-items-right-upper {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #484848;
+  align-self: flex-end;
+}
+
+.results
+  .results-body
+  .results-body-items
+  .results-body-items-right
+  .results-body-items-right-lower {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #484848;
+  margin-top: -5px;
+  text-align: end;
+}
+
+.results .results-body .results-body-line {
+  border-bottom: 1.3px solid #7e7e7e;
+  width: 44rem;
+  margin-top: 0.7rem;
+}
+
+.results .results-body .results-body-line {
+  border-bottom: 1.3px solid #7e7e7e;
+  width: 44rem;
+  margin-top: 0.7rem;
+}
+
+.results .results-not-found {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #72777a;
+  margin-right: 18rem;
+}

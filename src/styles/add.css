@@ -1,0 +1,220 @@
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40rem;
+  margin-bottom: 10rem;
+}
+
+.add .add-logo {
+  position: absolute;
+  width: 149px;
+  height: 63px;
+  margin-left: 37px;
+  margin-top: 27px;
+  background: url('../../public/logo.jpeg');
+  background-size: cover;
+}
+
+.add .add-return {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 14rem;
+  margin-top: 2rem;
+  margin-right: 21rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.add .add-return .add-return-text {
+  width: 220px;
+  height: 31px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #484848;
+}
+
+.add .add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+
+.add .add-form .add-form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add .add-form .add-form-input input {
+  width: 590px;
+  height: 46px;
+  background: #ffffff;
+  border: 1.5px solid #484848;
+  border-radius: 12px;
+  padding-left: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.add .add-form .add-form-input input::placeholder {
+  color: rgba(100, 100, 100, 0.5);
+}
+
+.add .add-form .add-form-input input:hover {
+  background: rgba(100, 100, 100, 0.08);
+}
+
+.add .add-form .add-form-input label {
+  width: 207px;
+  height: 26px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #686868;
+  margin-bottom: -0.3rem;
+  margin-left: 0.3rem;
+}
+
+.add .add-form-button {
+  width: 138px;
+  height: 46px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background: #204080;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 30rem;
+}
+
+.add .add-form-button:hover {
+  background: #4f75c2;
+}
+
+.add .add-form .add-form-input .error-label {
+  width: 207px;
+  height: 26px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: -0.3rem;
+  margin-left: 0.3rem;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.add .add-form .add-form-input .error-msg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 0, 0, 0.5);
+  margin-left: 0.3rem;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.add .add-form .add-form-input .error-input {
+  width: 590px;
+  height: 46px;
+  background: #ffffff;
+  border: 1.5px solid #ff0000;
+  border-radius: 12px;
+  padding-left: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.add .add-form .add-form-input .error-input::placeholder {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.add .add-error {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 375px;
+  height: 123px;
+  margin-left: 85rem;
+  margin-top: 3rem;
+  background: #c4c4c4;
+  border-radius: 8px;
+}
+
+.add .add-error .add-error-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1rem;
+  gap: 10px;
+}
+
+.add .add-error .add-error-left .add-error-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 36px;
+  color: #090a0a;
+  margin-top: 1rem;
+}
+
+.add .add-error .add-error-left .add-error-msg {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #090a0a;
+  margin-top: -0.4rem;
+  width: 15.5rem;
+}
+
+.add .add-error .add-error-right .add-error-badge {
+  padding: 8px 16px;
+  background: #ff4e78;
+  border-radius: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 3.5rem;
+  margin-left: 10px;
+}
+
+.add .add-error .add-error-right .add-error-close {
+  position: relative;
+  top: 9.5px;
+  left: 75px;
+  cursor: pointer;
+}
