@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import '../styles/results.css';
 import mockData from '../mockData.json';
+import Pagination from '../components/Pagination';
 
 export default function Results() {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ export default function Results() {
   const [value, setValue] = useState('');
   const url = window.location.href.slice(21);
   const [results, setResults] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
+  const [page, setPage] = useState();
 
   const [order, setOrder] = useState({
     nameAscending: false,
@@ -71,7 +74,7 @@ export default function Results() {
       }
     }
     setOpen(false);
-    console.log(results);
+    setCurrentPage(1);
   }, [order.nameDescending, order.nameAscending, order.yearDescending, order.yearAscending]);
 
   const searchData = () => {
@@ -86,7 +89,6 @@ export default function Results() {
     );
     setResults(data);
   };
-
   return (
     <div className="results">
       <div className="results-nav">
@@ -138,7 +140,7 @@ export default function Results() {
         )}
       </div>
       {results && results.length ? (
-        results.slice(0, 5).map((result, index) => (
+        results.slice(currentPage * 5 - 5, currentPage * 5).map((result, index) => (
           <div key={index} className="results-body">
             <div className="results-body-items">
               <div className="results-body-items-left">
@@ -155,15 +157,25 @@ export default function Results() {
                 <h1 className="results-body-items-right-lower">{result[3]}</h1>
               </div>
             </div>
-            {results.length >= 5
-              ? index !== 4 && <div className="results-body-line" />
-              : index !== results.length - 1 && <div className="results-body-line" />}
+
+            {results.slice(currentPage * 5 - 5, currentPage * 5).length !== index + 1 && (
+              <div className="results-body-line" />
+            )}
           </div>
         ))
       ) : (
         <h1 className="results-not-found">Record not found</h1>
       )}
-      <div className="results-pagination"></div>
+
+      {results && results.length ? (
+        <Pagination
+          results={results}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+          page={page}
+          setPage={setPage}
+        />
+      ) : null}
     </div>
   );
 }
